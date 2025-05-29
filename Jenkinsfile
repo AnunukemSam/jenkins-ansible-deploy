@@ -7,16 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Install Ansible') {
-            steps {
-                sh '''
-                if ! command -v ansible &> /dev/null; then
-                  apt update && sudo apt install -y ansible
-                fi
-                '''
-            }
-        }
-
         stage('Run Ansible Playbook') {
             steps {
                 sh 'ansible-playbook -i $INVENTORY $PLAYBOOK'
