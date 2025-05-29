@@ -7,12 +7,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                git 'https://github.com/yourusername/static-html-ci-cd.git'
-            }
-        }
-
         stage('Install Ansible') {
             steps {
                 sh '''
