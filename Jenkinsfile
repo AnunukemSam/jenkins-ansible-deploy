@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        INVENTORY = 'ansible/inventory.ini'
-        PLAYBOOK = 'ansible/deploy.yml'
+        INVENTORY = 'inventory.ini'
+        PLAYBOOK = 'deploy.yml'
     }
 
     stages {
