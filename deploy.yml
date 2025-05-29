@@ -1,5 +1,5 @@
 - name: Deploy static HTML page
-  hosts: web
+  hosts: webserver
   become: true
 
   tasks:
