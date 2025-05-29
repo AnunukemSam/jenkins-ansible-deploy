@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Static Webpage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px #000;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .button {
+      padding: 1rem 2rem;
+      background-color: #ffd700;
+      color: #333;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background-color: #ffc107;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.15);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    My Ansible-Deployed Website 🚀
+  </header>
+  <main>
+    <h1>Welcome to My Static Webpage!</h1>
+    <p>This webpage was automatically deployed using Jenkins + Ansible to a VirtualBox-hosted VM.</p>
+    <a href="#" class="button">Learn More</a>
+  </main>
+  <footer>
+    © 2025 MyDevOpsProject. All rights reserved.
+  </footer>
+</body>
+</html>
