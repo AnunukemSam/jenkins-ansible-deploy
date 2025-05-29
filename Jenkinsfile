@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh '''
                 if ! command -v ansible &> /dev/null; then
-                  sudo apt update && sudo apt install -y ansible
+                  apt update && sudo apt install -y ansible
                 fi
                 '''
             }
